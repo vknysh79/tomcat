@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vknyshtomcatnew 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vknyshtomcatnew
+  template:
+    metadata:
+      labels:
+        app: vknyshtomcatnew 
+    spec:
+      containers:
+        - name: vknyshtomcatnew 
+          image: tomcat4knysh.azurecr.io/vknyshtomcatnew
+          ports:
+          - containerPort: 8181
