@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tomcat-deployment
+  name: tomcat
 spec:
   selector:
     matchLabels:
-      app: tomcat-deployment
+      app: tomcat
   replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
