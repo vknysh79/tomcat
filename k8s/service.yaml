@@ -6,7 +6,9 @@ spec:
   selector:
     app: tomcat
   ports:
-  - protocol: "tcp"
+  - protocol: "TCP"
     port: 8080
     targetPort: 8181
   type: LoadBalancer
+
+---
